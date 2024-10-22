@@ -1,0 +1,182 @@
+/* KanbanBoard.css */
+.kanban-container {
+    padding: 10px; /* Reduced padding */
+    background-color: #f7f7f7; /* Very light grey background */
+    min-height: 100vh;
+}
+
+.header {
+    margin-bottom: 16px; /* Reduced margin */
+    background-color: white; /* Set the top bar to white */
+    padding: 10px; /* Add some padding to the header */
+    border-radius: 6px; /* Optional: add rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for effect */
+}
+
+.display-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.display-button {
+    padding: 6px 12px; /* Reduced padding */
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Reduced gap */
+    font-size: 14px; /* Reduced font size */
+}
+
+.icon {
+    font-size: 10px; /* Reduced icon size */
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px; /* Reduced padding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 240px;
+    z-index: 1000;
+}
+
+.dropdown-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.dropdown-row:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-row select {
+    padding: 4px; /* Reduced padding */
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 100px; /* Reduced width */
+    font-size: 12px; /* Reduced font size */
+}
+
+.board {
+    display: flex;
+    gap: 10px; /* Reduced gap */
+    overflow-x: auto;
+    padding-bottom: 10px; /* Reduced padding */
+}
+
+.column {
+    min-width: 250px; /* Reduced minimum width */
+    background: #f4f5f8;
+}
+
+.column-header {
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+.group-title {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Reduced gap */
+    font-weight: 500;
+    font-size: 14px; /* Reduced font size */
+}
+
+.count {
+    color: #6b6f76;
+    font-size: 12px; /* Reduced font size */
+}
+
+.tickets {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced gap */
+}
+
+.ticket {
+    background: white;
+    border-radius: 8px;
+    padding: 12px; /* Reduced padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-id {
+    color: #6b6f76;
+    font-size: 12px; /* Reduced font size */
+    margin-bottom: 6px; /* Reduced margin */
+}
+
+.ticket-title {
+    font-weight: 500;
+    margin-bottom: 8px; /* Reduced margin */
+    font-size: 14px; /* Reduced font size */
+}
+
+.ticket-tags {
+    display: flex;
+    gap: 6px; /* Reduced gap */
+    flex-wrap: wrap;
+}
+
+.priority-tag,
+.feature-tag {
+    padding: 3px 6px; /* Reduced padding */
+    border-radius: 4px;
+    font-size: 10px; /* Reduced font size */
+}
+
+.feature-tag {
+    background: #f4f5f8;
+    color: #6b6f76;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px; /* Reduced font size */
+    color: #6b6f76;
+}
+
+.user-icon {
+    width: 20px;  /* Adjust the width to a smaller size */
+    height: 20px; /* Adjust the height to a smaller size */
+    border-radius: 50%; /* Keep it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-weight: bold; /* Make initials bold */
+    margin-right: 8px; /* Space between icon and text */
+    margin-bottom: 4px;
+    font-size: 12px; /* Adjust font size for initials */
+  }
+  
+  .network-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align bars to the left */
+    margin-left: 8px; /* Add space between title and icon */
+  }
+  
+  .bar {
+    width: 4px; /* Width of each bar */
+    height: 8px; /* Default height for the bars */
+    background-color: #CF3A3A; /* Default color (can adjust based on your design) */
+    margin: 1px 0; /* Spacing between bars */
+  }
+  
+  .bar.full {
+    height: 16px; /* Height for full bars (high priority) */
+  }
+  
