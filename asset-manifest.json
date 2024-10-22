@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/QUICKSELL/static/css/main.e8f6be37.css",
+    "main.js": "/QUICKSELL/static/js/main.681d06b4.js",
+    "static/js/453.ed3810f9.chunk.js": "/QUICKSELL/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/QUICKSELL/index.html",
+    "main.e8f6be37.css.map": "/QUICKSELL/static/css/main.e8f6be37.css.map",
+    "main.681d06b4.js.map": "/QUICKSELL/static/js/main.681d06b4.js.map",
+    "453.ed3810f9.chunk.js.map": "/QUICKSELL/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8f6be37.css",
+    "static/js/main.681d06b4.js"
+  ]
+}
